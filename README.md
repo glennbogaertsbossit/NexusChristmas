@@ -59,13 +59,17 @@ zlib. You can solve this by installing the 32 bit version here:
     mkdir .Nexus
     unzip recent.zip in your ~/.Nexus/
     
-Execute Nexus (you can add -daemon to run it in the background):
+## Running the Nexus daemon (you can add -daemon to run it in the background):
     
-    ./nexus -checkblocks=10 -checklevel=0 -rpcuser=INPUTSOMETHING -rpcpassword=INPUTSOMETHING -rpcport=9325 -blocknotify="./parseHash.s
+    ./nexus -checkblocks=10 -checklevel=0 -rpcuser=INPUTSOMETHING -rpcpassword=INPUTSOMETHING -rpcport=9325 -blocknotify="./parseHash.sh %s"
+    You can continuous view the log by executing: tail -f ~/.Nexus/debug.log
     
-You can continuous view the log by executing:
+    The rpcuser and rpcpassword needs to be updated to something of your choice, this in turn needs to be entered in the parseHash.sh
+    The option blocknotify executes the script every time a new block is generated on the blockchain, the %s gives the latest block hash to the script as an argument.
     
-    tail -f ~/.Nexus/debug.log
+    The parseHash.sh script performs an RPC call to the nexus daemon and gets the channel the latest block was generated on, this is then send to the WEMOS D1 Pro Mini.
+    
+
     
 
     
