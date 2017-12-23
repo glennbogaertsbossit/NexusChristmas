@@ -1,5 +1,6 @@
 # Nexus Earth Christmas tree
-This project was an idea I had to brighten up our Christmas tree with a blockchain powered LED string. I am a strong believer in the Nexus Earth project, this is the blockchain of my choice to power my Christmas tree 
+This project was an idea I had to brighten up our Christmas tree with a blockchain powered LED string. I am a strong believer in the Nexus Earth project, this is the blockchain of my choice to power my Christmas tree.
+![alt text](https://github.com/glennbogaertsbossit/NexusChristmas/blob/master/NexusEarthTree.jpg)
 
 ## Description
 Everytime a new block is generated on the Nexus Earth blockchain a random LED is lid up. On the Nexus blockchain there are 3 channels: Prime, Hash, and Nexus Proof of Stake (nPOS). Each of these channels get a specific color on the tree (RGB).
